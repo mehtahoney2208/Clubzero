@@ -1,0 +1,136 @@
+.home-wrapper {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('/img/hero-banner.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  backdrop-filter: brightness(0.6);
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px black;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-primary {
+  background: #ffc107;
+  color: black;
+}
+.btn-secondary {
+  background: black;
+  color: white;
+}
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.85;
+}
+
+/* FEATURES */
+.features {
+  padding: 60px 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+.feature-box {
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.feature-box:hover {
+  transform: translateY(-6px);
+}
+.feature-box i {
+  font-size: 2.8rem;
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+/* BESTSELLERS */
+.bestsellers {
+  padding: 60px 5%;
+  text-align: center;
+}
+.bestsellers h2 {
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding-bottom: 15px;
+  text-align: center;
+}
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.btn-buy {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.btn-buy:hover {
+  background: #333;
+}
+
+/* EXCLUSIVE */
+.exclusive {
+  padding: 60px 5%;
+  text-align: center;
+  background: #f8f9fa;
+}
+.exclusive-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+.ex-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.ex-img:hover {
+  transform: scale(1.03);
+}
+
+/* END */
